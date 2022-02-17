@@ -32,7 +32,7 @@ int main(int argc, char **argv)
         glutDisplayFunc(draw_arc);
         glutMainLoop();
         return 0;
-    } catch (int) {
+    } catch (...) {
         return 1; /// if failed, unnessary thing, as I'm dumb I just put it there
     }
 }
